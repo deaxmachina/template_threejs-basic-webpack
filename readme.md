@@ -3,8 +3,6 @@
 *Credit*: [Three.js Journey](https://threejs-journey.com/) by Bruno Simon modified starter code for Lesson 10 Debug UI
 
 ## Setup
-Download [Node.js](https://nodejs.org/en/download/).
-Run this followed commands:
 
 ``` bash
 # Install dependencies (only the first time)

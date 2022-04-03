@@ -14,6 +14,15 @@ const scene = new THREE.Scene()
 
 
 /************************************
+************** Sizes ****************
+************************************/
+const sizes = {
+    width: window.innerWidth,
+    height: window.innerHeight
+}
+
+
+/************************************
 ************** Object ***************
 ************************************/
 const geometry = new THREE.BoxGeometry(1, 1, 1)
@@ -21,14 +30,6 @@ const material = new THREE.MeshBasicMaterial({ color: 0xff0000 })
 const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh)
 
-
-/************************************
-************** Sizes ****************
-************************************/
-const sizes = {
-    width: window.innerWidth,
-    height: window.innerHeight
-}
 
 
 /************************************
@@ -77,8 +78,7 @@ window.addEventListener('resize', () =>
 // Animate
 const clock = new THREE.Clock()
 
-const tick = () =>
-{
+const tick = () => {
     const elapsedTime = clock.getElapsedTime()
 
     // Update controls
